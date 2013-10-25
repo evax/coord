@@ -1,0 +1,15 @@
+{application, coord,
+ [
+  {description, "Erlang/OTP distributed services startup coordination"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  nodefinder
+                 ]},
+    {mod, { coord_app, []}},
+  {env, [
+    {services, []}
+  ]}
+ ]}.
